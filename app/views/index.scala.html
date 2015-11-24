@@ -1,0 +1,15 @@
+@(message: String)
+
+@main("Extract screenshots") {
+
+    @helper.form(action = routes.Application.upload, 'enctype -> "multipart/form-data") {
+
+        <label>
+            JSON:
+            <input name="data" type="file" />
+        </label>
+        <button type="submit">Send</button>
+
+    }
+
+}
